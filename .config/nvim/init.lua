@@ -10,11 +10,12 @@ require("user.cmp")
 
 require("user.nvim-tree")
 require("user.telescope")
-require("user.terminal")
+require("user.treesitter")
 
+require("user.session")
 require("user.colorschema")
 require("user.git")
-require("user.treesitter")
+require("user.terminal")
 require("user.comment")
 require("user.autopairs")
 
