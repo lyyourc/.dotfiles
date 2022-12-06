@@ -118,7 +118,7 @@ export NVM_DIR="$HOME/.nvm"
 # https://medium.com/codex/how-and-why-you-should-split-your-bashrc-or-zshrc-files-285e5cc3c843
 source ~/.1da/main.sh
 source ~/.1da/fzf.sh
-source ~/.echotech/backend.sh
+source ~/.echotech/main.sh
 
 # zsh-plugins
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
