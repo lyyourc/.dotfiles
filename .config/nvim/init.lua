@@ -1,21 +1,17 @@
-require("user.options")
-require("user.keymaps")
-require("user.plugins")
+require("core.options")
 
--- keep in order
-require("user.mason")
-require("user.lsp")
-require("user.format")
-require("user.cmp")
+-- package manager
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+    vim.fn.system(
+        {"git", "clone", "--filter=blob:none", "https://github.com/folke/lazy.nvim.git", "--branch=stable", -- latest stable release
+         lazypath})
+end
+vim.opt.rtp:prepend(lazypath)
 
-require("user.nvim-tree")
-require("user.telescope")
-require("user.treesitter")
+require('lazy').setup({
+    { import = 'core.plugins' },
+    { import = 'custom.plugins' }
+}, {})
 
-require("user.session")
-require("user.colorschema")
-require("user.git")
-require("user.terminal")
-require("user.comment")
-require("user.autopairs")
-
+require("core.keymaps")

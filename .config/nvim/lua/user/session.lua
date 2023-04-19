@@ -1,4 +1,0 @@
-require("auto-session").setup({
-
-})
-

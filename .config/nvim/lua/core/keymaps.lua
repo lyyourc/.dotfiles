@@ -36,4 +36,4 @@ keymap("n", "<leader>et", ":NvimTreeToggle<cr>")
 keymap("n", "<leader>ef", ":NvimTreeFocus<cr>")
 
 -- format
-keymap("n", "<leader>fm", "<cmd>lua vim.lsp.buf.formatting()<cr>")
+keymap("n", "<leader>fm", "<cmd>lua vim.lsp.buf.format()<cr>")
