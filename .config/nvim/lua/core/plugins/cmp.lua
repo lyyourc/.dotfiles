@@ -1,8 +1,11 @@
 return { {
 	'hrsh7th/nvim-cmp',
-	dependencies = { 'hrsh7th/cmp-nvim-lsp',                              -- LSP source for nvim-cmp
-		'hrsh7th/cmp-buffer', 'hrsh7th/cmp-path', 'saadparwaiz1/cmp_luasnip', -- Snippets source for nvim-cmp
-		'L3MON4D3/LuaSnip'                                                -- Snippets plugin
+	dependencies = {
+		'hrsh7th/cmp-nvim-lsp', -- LSP source for nvim-cmp
+		'hrsh7th/cmp-buffer',
+		'hrsh7th/cmp-path',
+		'saadparwaiz1/cmp_luasnip', -- Snippets source for nvim-cmp
+		'L3MON4D3/LuaSnip'    -- Snippets plugin
 	},
 	config = function()
 		-- https://github.com/neovim/nvim-lspconfig/wiki/Autocompletion#nvim-cmp

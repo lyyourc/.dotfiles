@@ -19,7 +19,7 @@ return { {
 		}, {
 		'williamboman/mason-lspconfig.nvim',
 		opts = {
-			ensure_installed = { "gopls", "lua_la", "golangci_lint_ls" }
+			ensure_installed = { "gopls", "lua_ls", "golangci_lint_ls" }
 		}
 	} },
 	config = function()
