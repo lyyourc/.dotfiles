@@ -39,7 +39,8 @@ return { {
 				['<C-n>'] = cmp.mapping.select_next_item(),
 				['<C-e>'] = cmp.mapping.abort(),
 				['<CR>'] = cmp.mapping.confirm({
-					select = true
+					select = true,
+					behavior = cmp.ConfirmBehavior.Replace,
 				}),
 				["<C-Space>"] = cmp.mapping.complete(),
 				['<Tab>'] = cmp.mapping(function(fallback)
