@@ -1,4 +1,5 @@
 require("core.options")
+require("core.keymaps")
 
 -- package manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -23,4 +24,3 @@ require('lazy').setup({
 	{ import = 'custom.plugins' }
 }, {})
 
-require("core.keymaps")
